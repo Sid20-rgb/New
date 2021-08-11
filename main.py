@@ -1,16 +1,16 @@
-# This is a sample Python script.
+from tkinter import *
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+root = Tk()
 
+e = Entry(root)
+e.grid(row = 0, column = 0)
+e.insert(0, "Enter your name:")
+def onClick():
+    ans = e.get()
+    output= Label(root, text = ans)
+    output.grid(row = 1, column = 1)
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+but = Button(root, text = "Click!", commmand = onClick())
+but.grid(row = 2, column = 0)
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+root.mainloop()
