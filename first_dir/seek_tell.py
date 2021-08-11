@@ -1,0 +1,8 @@
+f = open("xyz.txt", "r+")
+print("The pointer is in", f.tell())
+f.seek(5)
+print("After seek the pointer is in", f.tell())
+val = f.read(5)
+f.write("bye")
+print(val)
+f.close()

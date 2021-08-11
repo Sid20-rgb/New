@@ -1,0 +1,6 @@
+f = open("xyz.txt", "r")
+content = f.read()
+f.close()
+f = open("zyx.txt", "w")
+f.write(content)
+f.close()

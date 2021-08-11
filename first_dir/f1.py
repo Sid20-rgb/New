@@ -1,0 +1,5 @@
+f = open("xyz.txt", "r+")
+lines = f.read()
+print(lines)
+f.write("\nHI")
+f.close()

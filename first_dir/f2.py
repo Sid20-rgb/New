@@ -1,0 +1,5 @@
+f = open("xyz.txt", "wb")
+f.write(b'hello')
+f.seek(4)
+print(f.tell())
+f.close()
